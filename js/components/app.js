@@ -3,8 +3,8 @@ import {Link} from 'react-router';
 
 export default function App(props) {
   return (
-    <div class="container">
-      <div class="sidebar">
+    <div className="container">
+      <div className="sidebar">
         <ul>
           <li>
             <Link to={'/inbox'}>Inbox</Link>
@@ -14,7 +14,7 @@ export default function App(props) {
           </li>
         </ul>
       </div>
-      <div class="content">
+      <div className="content">
         {props.children}
       </div>
     </div>
