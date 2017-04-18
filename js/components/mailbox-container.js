@@ -13,6 +13,7 @@ export default function MailboxContainer(props) {
 
   return (
     <div>
+      <h3>{props.params.mailbox}</h3>
       {renderMailbox()}
       {props.children}
     </div>
