@@ -3,7 +3,6 @@ import EMAILS from '../emails';
 
 export default function Email(props) {
   const email = EMAILS[props.params.mailbox][props.params.emailId];
-  console.log(props);
 
   return (
     <div>
