@@ -12,8 +12,8 @@ const routes = (
   <Router history={hashHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={MailboxContainer} />
-      <Route path="/:mailbox" component={MailboxContainer}>
-        {/* <Route path="/:emailId" component={Email}/> */}
+      <Route path=":mailbox" component={MailboxContainer}>
+        <Route path=":emailId" component={Email} />
       </Route>
     </Route>
   </Router>
